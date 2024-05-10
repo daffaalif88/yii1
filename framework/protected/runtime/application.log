@@ -448,3 +448,108 @@ Stack trace:
 REQUEST_URI=/framework/index.php?r=jadwalDiklat/create
 HTTP_REFERER=http://localhost:8080/framework/index.php?r=jadwalDiklat/index
 ---
+2024/05/10 09:37:22 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "informasi-jadwal-diklat/index". in /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#1 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/framework/index.php?r=informasi-jadwal-diklat/index
+HTTP_REFERER=http://localhost:8080/framework/index.php?r=jadwalDiklat/index
+---
+2024/05/10 09:37:36 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "asdsadasd/index". in /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#1 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/framework/index.php?r=asdsadasd/index
+---
+2024/05/10 09:41:46 [error] [php] include(id.php): Failed to open stream: No such file or directory (/home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/YiiBase.php:463)
+Stack trace:
+#0 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/YiiBase.php(463): include()
+#1 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/web/helpers/CHtml.php(2396): autoload()
+#2 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/web/helpers/CHtml.php(2321): value()
+#3 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/protected/views/kehadiran/_form.php(27): listData()
+#4 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/web/CBaseController.php(126): require()
+#5 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/web/CBaseController.php(95): KehadiranController->renderInternal()
+#6 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/web/CController.php(872): KehadiranController->renderFile()
+#7 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/protected/views/kehadiran/create.php(18): KehadiranController->renderPartial()
+#8 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/web/CBaseController.php(126): require()
+#9 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/web/CBaseController.php(95): KehadiranController->renderInternal()
+#10 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/web/CController.php(872): KehadiranController->renderFile()
+#11 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/web/CController.php(785): KehadiranController->renderPartial()
+#12 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/protected/controllers/KehadiranController.php(84): KehadiranController->render()
+#13 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/web/actions/CInlineAction.php(49): KehadiranController->actionCreate()
+#14 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/web/CController.php(308): CInlineAction->runWithParams()
+#15 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/web/filters/CFilterChain.php(134): KehadiranController->runAction()
+#16 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#17 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/web/CController.php(1148): CAccessControlFilter->filter()
+#18 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/web/filters/CInlineFilter.php(58): KehadiranController->filterAccessControl()
+#19 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#20 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/web/CController.php(291): CFilterChain->run()
+#21 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/web/CController.php(265): KehadiranController->runActionWithFilters()
+#22 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/web/CWebApplication.php(282): KehadiranController->run()
+#23 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#24 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#25 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/index.php(13): CWebApplication->run()
+REQUEST_URI=/framework/index.php?r=kehadiran/create
+2024/05/10 09:41:49 [error] [php] include(id.php): Failed to open stream: No such file or directory (/home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/YiiBase.php:463)
+Stack trace:
+#0 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/YiiBase.php(463): include()
+#1 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/web/helpers/CHtml.php(2396): autoload()
+#2 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/web/helpers/CHtml.php(2321): value()
+#3 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/protected/views/kehadiran/_form.php(27): listData()
+#4 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/web/CBaseController.php(126): require()
+#5 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/web/CBaseController.php(95): KehadiranController->renderInternal()
+#6 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/web/CController.php(872): KehadiranController->renderFile()
+#7 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/protected/views/kehadiran/create.php(18): KehadiranController->renderPartial()
+#8 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/web/CBaseController.php(126): require()
+#9 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/web/CBaseController.php(95): KehadiranController->renderInternal()
+#10 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/web/CController.php(872): KehadiranController->renderFile()
+#11 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/web/CController.php(785): KehadiranController->renderPartial()
+#12 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/protected/controllers/KehadiranController.php(84): KehadiranController->render()
+#13 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/web/actions/CInlineAction.php(49): KehadiranController->actionCreate()
+#14 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/web/CController.php(308): CInlineAction->runWithParams()
+#15 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/web/filters/CFilterChain.php(134): KehadiranController->runAction()
+#16 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#17 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/web/CController.php(1148): CAccessControlFilter->filter()
+#18 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/web/filters/CInlineFilter.php(58): KehadiranController->filterAccessControl()
+#19 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#20 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/web/CController.php(291): CFilterChain->run()
+#21 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/web/CController.php(265): KehadiranController->runActionWithFilters()
+#22 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/web/CWebApplication.php(282): KehadiranController->run()
+#23 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#24 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#25 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/index.php(13): CWebApplication->run()
+REQUEST_URI=/framework/index.php?r=kehadiran/create
+2024/05/10 09:41:59 [error] [exception.TypeError] TypeError: call_user_func(): Argument #1 ($callback) must be a valid callback, array must have exactly two members in /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/web/helpers/CHtml.php:2396
+Stack trace:
+#0 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/web/helpers/CHtml.php(2321): CHtml::value()
+#1 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/protected/views/kehadiran/_form.php(27): CHtml::listData()
+#2 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/web/CBaseController.php(126): require('...')
+#3 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/web/CBaseController.php(95): CBaseController->renderInternal()
+#4 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/web/CController.php(872): CBaseController->renderFile()
+#5 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/protected/views/kehadiran/create.php(18): CController->renderPartial()
+#6 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/web/CBaseController.php(126): require('...')
+#7 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/web/CBaseController.php(95): CBaseController->renderInternal()
+#8 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/web/CController.php(872): CBaseController->renderFile()
+#9 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/web/CController.php(785): CController->renderPartial()
+#10 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/protected/controllers/KehadiranController.php(84): CController->render()
+#11 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/web/actions/CInlineAction.php(49): KehadiranController->actionCreate()
+#12 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/web/CController.php(308): CInlineAction->runWithParams()
+#13 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/web/filters/CFilterChain.php(134): CController->runAction()
+#14 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#15 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/web/CController.php(1148): CFilter->filter()
+#16 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl()
+#17 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#18 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/web/CController.php(291): CFilterChain->run()
+#19 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/web/CController.php(265): CController->runActionWithFilters()
+#20 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/web/CWebApplication.php(282): CController->run()
+#21 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#22 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#23 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/framework/index.php?r=kehadiran/create
+HTTP_REFERER=http://localhost:8080/framework/index.php?r=kehadiran/index
+---

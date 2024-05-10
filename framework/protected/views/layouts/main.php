@@ -38,6 +38,8 @@
 					array('label' => 'Contact', 'url' => array('/site/contact')),
 					array('label' => 'Peserta', 'url' => array('/peserta/index')),
 					array('label' => 'Jadwal Diklat', 'url' => array('/jadwalDiklat/index')),
+					array('label' => 'Kehadiran', 'url' => array('/kehadiran/index')),
+					array('label' => 'Informasi Jadwal Diklat', 'url' => array('/informasi-jadwal-diklat/index')),
 					array('label' => 'Login', 'url' => array('/site/login'), 'visible' => Yii::app()->user->isGuest),
 					array('label' => 'Logout (' . Yii::app()->user->name . ')', 'url' => array('/site/logout'), 'visible' => !Yii::app()->user->isGuest)
 				),

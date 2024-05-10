@@ -1,10 +1,12 @@
 <?php
 /* @var $this SiteController */
 
-$this->pageTitle=Yii::app()->name;
+$this->pageTitle = Yii::app()->name;
 ?>
 
 <h1>Welcome to <i><?php echo CHtml::encode(Yii::app()->name); ?></i></h1>
+
+<h1>Perjalan Hidup Memenuhi Takdir</h1>
 
 <p>Congratulations! You have successfully created your Yii application.</p>
 
@@ -15,6 +17,6 @@ $this->pageTitle=Yii::app()->name;
 </ul>
 
 <p>For more details on how to further develop this application, please read
-the <a href="https://www.yiiframework.com/doc/">documentation</a>.
-Feel free to ask in the <a href="https://www.yiiframework.com/forum/">forum</a>,
-should you have any questions.</p>
+	the <a href="https://www.yiiframework.com/doc/">documentation</a>.
+	Feel free to ask in the <a href="https://www.yiiframework.com/forum/">forum</a>,
+	should you have any questions.</p>
