@@ -32,8 +32,7 @@
 	<b><?php echo CHtml::encode($data->getAttributeLabel('tempat')); ?>:</b>
 	<?php echo CHtml::encode($data->tempat); ?>
 	<br />
-
-	<?php /*
+	
 	<b><?php echo CHtml::encode($data->getAttributeLabel('instruktur')); ?>:</b>
 	<?php echo CHtml::encode($data->instruktur); ?>
 	<br />
@@ -53,7 +52,5 @@
 	<b><?php echo CHtml::encode($data->getAttributeLabel('status')); ?>:</b>
 	<?php echo CHtml::encode($data->status); ?>
 	<br />
-
-	*/ ?>
 
 </div>

@@ -32,8 +32,7 @@
 	<b><?php echo CHtml::encode($data->getAttributeLabel('tanggal_pendaftaran')); ?>:</b>
 	<?php echo CHtml::encode($data->tanggal_pendaftaran); ?>
 	<br />
-
-	<?php /*
+	
 	<b><?php echo CHtml::encode($data->getAttributeLabel('status_keanggotaan')); ?>:</b>
 	<?php echo CHtml::encode($data->status_keanggotaan); ?>
 	<br />
@@ -41,7 +40,5 @@
 	<b><?php echo CHtml::encode($data->getAttributeLabel('keterangan')); ?>:</b>
 	<?php echo CHtml::encode($data->keterangan); ?>
 	<br />
-
-	*/ ?>
 
 </div>
