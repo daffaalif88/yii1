@@ -118,7 +118,12 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model, 'status_keanggotaan'); ?>
-		<?php echo $form->textField($model, 'status_keanggotaan', array('size' => 60, 'maxlength' => 255)); ?>
+		<!-- <?php echo $form->textField($model, 'status_keanggotaan', array('size' => 60, 'maxlength' => 255)); ?> -->
+		<?php echo $form->dropDownList($model, 'status_keanggotaan', array(
+    'aktif' => 'Aktif',
+    'tidak aktif' => 'Tidak Aktif'
+)); ?>
+
 		<?php echo $form->error($model, 'status_keanggotaan'); ?>
 	</div>
 

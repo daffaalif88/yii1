@@ -107,7 +107,10 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model, 'kategori'); ?>
-		<?php echo $form->textField($model, 'kategori', array('size' => 60, 'maxlength' => 255)); ?>
+		<?php echo $form->dropDownList($model, 'kategori', array(
+			'gratis' => 'Gratis',
+			'berbayar' => 'Berbayar'
+		)); ?>
 		<?php echo $form->error($model, 'kategori'); ?>
 	</div>
 
@@ -119,7 +122,10 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model, 'status'); ?>
-		<?php echo $form->textField($model, 'status', array('size' => 60, 'maxlength' => 255)); ?>
+		<?php echo $form->dropDownList($model, 'status', array(
+			'Selesai' => 'Selesai',
+			'Belum Dilaksanakan' => 'Belum Dilaksanakan'
+		)); ?>
 		<?php echo $form->error($model, 'status'); ?>
 	</div>
 
