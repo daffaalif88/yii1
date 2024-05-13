@@ -7,8 +7,10 @@
 	<meta name="language" content="en">
 
 	<!-- blueprint CSS framework -->
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/screen.css" media="screen, projection">
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/print.css" media="print">
+	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/screen.css"
+		media="screen, projection">
+	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/print.css"
+		media="print">
 	<!--[if lt IE 8]>
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/ie.css" media="screen, projection">
 	<![endif]-->
@@ -16,52 +18,31 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css">
 
+	<link rel="stylesheet" href="../../../assets/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+	<script src="../../../assets/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
 
 <body>
 
 	<div class="container" id="page">
+		<?php $this->renderPartial('//layouts/header'); ?>
 
-		<div id="header">
-			<div id="logo">
-				<!-- <?php echo CHtml::encode(Yii::app()->name); ?> -->
-				Daffa Alif WengDev
-			</div>
-		</div><!-- header -->
 
-		<div id="mainmenu">
-			<?php $this->widget('zii.widgets.CMenu', array(
-				'items' => array(
-					array('label' => 'Home', 'url' => array('/site/index')),
-					array('label' => 'About', 'url' => array('/site/page', 'view' => 'about')),
-					array('label' => 'Contact', 'url' => array('/site/contact')),
-					array('label' => 'Peserta', 'url' => array('/peserta/index')),
-					array('label' => 'Jadwal Diklat', 'url' => array('/jadwalDiklat/index')),
-					array('label' => 'Kehadiran', 'url' => array('/kehadiran/index')),
-					// array('label' => 'Informasi Jadwal Diklat', 'url' => array('/jadwalDiklat/informasi')),
-					array('label' => 'Laporan Diklat', 'url' => array('/laporanDiklat/index')),
-					array('label' => 'Login', 'url' => array('/site/login'), 'visible' => Yii::app()->user->isGuest),
-					array('label' => 'Logout (' . Yii::app()->user->name . ')', 'url' => array('/site/logout'), 'visible' => !Yii::app()->user->isGuest)
-				),
-
-			)); ?>
-		</div><!-- mainmenu -->
 		<?php if (isset($this->breadcrumbs)) : ?>
-			<?php $this->widget('zii.widgets.CBreadcrumbs', array(
+		<?php $this->widget('zii.widgets.CBreadcrumbs', array(
 				'links' => $this->breadcrumbs,
-			)); ?><!-- breadcrumbs -->
+			)); ?>
+		<!-- breadcrumbs -->
 		<?php endif ?>
 
 		<?php echo $content; ?>
 
 		<div class="clear"></div>
 
-		<div id="footer">
-			Copyright &copy; <?php echo date('Y'); ?> by My Company.<br />
-			All Rights Reserved.<br />
-			<?php echo Yii::powered(); ?>
-		</div><!-- footer -->
+		<?php $this->renderPartial('//layouts/footer'); ?>
+
 
 	</div><!-- page -->
 
