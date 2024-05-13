@@ -1,7 +1,7 @@
 <div id="header">
 			<div id="logo">
 				<!-- <?php echo CHtml::encode(Yii::app()->name); ?> -->
-				Daffa Alif WengDev
+				Daffaalif WengDev
 			</div>
 		</div><!-- header -->
 
