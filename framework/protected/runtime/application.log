@@ -920,3 +920,14 @@ Stack trace:
 REQUEST_URI=/framework/index.php?r=jadwalDiklat/informasi
 HTTP_REFERER=http://localhost:8080/framework/index.php?r=jadwalDiklat/index
 ---
+2024/05/13 08:23:27 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "informasi". in /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/web/CController.php:486
+Stack trace:
+#0 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/web/CController.php(270): CController->missingAction()
+#1 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/web/CWebApplication.php(282): CController->run()
+#2 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#3 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/lpt/Belajar Pemerograman - Muhammad Daffa Nur Alif/Belajar-Yii1/yii1/framework/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/framework/index.php?r=jadwalDiklat/informasi
+HTTP_REFERER=http://localhost:8080/framework/index.php?r=jadwalDiklat/index
+---
