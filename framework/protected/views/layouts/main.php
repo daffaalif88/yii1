@@ -18,8 +18,11 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css">
 
-	<link rel="stylesheet" href="../../../assets/bootstrap-5.3.3-dist/css/bootstrap.min.css">
-	<script src="../../../assets/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+	<!-- <link rel="stylesheet" href="../../../assets/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+	<script src="../../../assets/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script> -->
+	<link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/assets/bootstrap/css/bootstrap.min.css">
+	<script src="<?php echo Yii::app()->request->baseUrl; ?>/assets/bootstrap/js/bootstrap.min.js"></script>
+
 
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
@@ -27,6 +30,7 @@
 <body>
 
 	<div class="container" id="page">
+		<?php $this->renderPartial('//layouts/navbar'); ?>
 		<?php $this->renderPartial('//layouts/header'); ?>
 
 
