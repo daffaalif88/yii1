@@ -12,9 +12,13 @@ $this->menu=array(
 );
 ?>
 
-<h1>Pesertas</h1>
+<div class="container">
+	<h1>Peserta</h1>
 
-<?php $this->widget('zii.widgets.CListView', array(
+	<div class="container"><?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,
 	'itemView'=>'_view',
 )); ?>
+	</div>
+
+</div>

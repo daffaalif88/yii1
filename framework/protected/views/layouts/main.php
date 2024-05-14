@@ -36,16 +36,19 @@
 		});
 	</script>
 
-
-
+	<style>
+		* {
+			color: antiquewhite;
+		}
+	</style>
 
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
 
-<body>
+<body style="background-color: darkgrey;">
 
-	<div class="container" id="page">
-		<!-- <?php $this->renderPartial('//layouts/navbar'); ?> -->
+	<div class="container" id="page" style="background-color:black">
+		<?php $this->renderPartial('//layouts/navbar'); ?>
 		<?php $this->renderPartial('//layouts/header'); ?>
 
 
