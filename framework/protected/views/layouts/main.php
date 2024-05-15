@@ -37,19 +37,18 @@
 	</script>
 
 	<style>
-		* {
+		/* p,h1,h2,h3,h4,h5,h6 {
 			color: antiquewhite;
-		}
+		} */
 	</style>
 
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
 
-<body style="background-color: darkgrey;">
+<body style="background-color: darkgrey;" class="container">
 
-	<div class="container" id="page" style="background-color:black">
+	<div class="container" id="page" style="background-color:ghostwhite">
 		<?php $this->renderPartial('//layouts/navbar'); ?>
-		<?php $this->renderPartial('//layouts/header'); ?>
 
 
 		<?php if (isset($this->breadcrumbs)) : ?>

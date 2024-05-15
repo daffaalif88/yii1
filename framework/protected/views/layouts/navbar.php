@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg bg-light">
+<nav class="navbar navbar-expand-lg sticky-top" style="background-color: #e3f2fd;">
     <div class="container-fluid">
         <a class="navbar-brand" href="'/site/index'">Daffaalif WengDev</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -10,7 +10,10 @@
                 <li class="nav-item">
                     <!-- <a class="nav-link active" aria-current="page" href="'/site/index'">Home</a> -->
                     <?php echo CHtml::link('Home', array('/site/index'), array('class' => 'nav-link active '));?>
-
+                </li>
+                <li class="nav-item">
+                    <!-- <a class="nav-link active" aria-current="page" href="'/site/index'">Home</a> -->
+                    <?php echo CHtml::link('About', array('/site/page', 'view' => 'about'), array('class' => 'nav-link active')); ?>
                 </li>
                 <li class="nav-item">
                     <!-- <a class="nav-link active" aria-current="page" href="'/site/about'">About</a> -->
@@ -26,7 +29,7 @@
                         <!-- <li><a class="dropdown-item" href="#">Peserta</a></li> -->
                         <?php echo CHtml::link('Peserta', array('/peserta/index'), array('class' => 'nav-link active '));?>
                         <!-- <li><a class="dropdown-item" href="#">Jadwal Diklat</a></li> -->
-                        <?php echo CHtml::link('Jadwal Diklat', array('/jadwalDiklat/index'), array('class' => 'nav-link active '));?>
+                        <?php echo CHtml::link('Jadwal Diklat', array('/jadwalDiklat/admin'), array('class' => 'nav-link active '));?>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
@@ -37,7 +40,7 @@
                     <ul class="dropdown-menu">
                         <!-- <li><a class="dropdown-item" href="#">Peserta</a></li>
                         <li><a class="dropdown-item" href="#">Jadwal Diklat</a></li> -->
-                        <?php echo CHtml::link('Kehadiran', array('/kehadiran/index'), array('class' => 'nav-link active '));?>
+                        <?php echo CHtml::link('Kehadiran', array('/kehadiran/admin'), array('class' => 'nav-link active '));?>
                         <?php echo CHtml::link('Laporan Diklat', array('/laporanDiklat/index'), array('class' => 'nav-link active '));?>
                     </ul>
                 </li>
@@ -55,8 +58,16 @@
                 </li>
             </ul>
             <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
+                <?php if (Yii::app()->user->isGuest): ?>
+                <a href="<?php echo Yii::app()->createUrl('/site/login'); ?>" class="btn btn-outline-primary">
+                    Login
+                </a>
+                <?php else: ?>
+                <a href="<?php echo Yii::app()->createUrl('/site/logout'); ?>" class="btn btn-outline-danger">
+                    Logout (<?php echo Yii::app()->user->name; ?>)
+                </a>
+                <?php endif; ?>
+
             </form>
         </div>
     </div>

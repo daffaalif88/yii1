@@ -35,14 +35,15 @@ $this->breadcrumbs=array(
 		<?php echo $form->passwordField($model,'password'); ?>
 		<?php echo $form->error($model,'password'); ?>
 		<p class="hint">
-			Hint: You may login with <kbd>demo</kbd>/<kbd>demo</kbd> or <kbd>admin</kbd>/<kbd>admin</kbd>.
+			Hint: You may login with <strong>demo</strong>/<strong>demo</strong> or <strong>admin</strong>/<strong>admin</strong>.
 		</p>
 	</div>
 
 	<div class="row rememberMe">
-		<?php echo $form->checkBox($model,'rememberMe'); ?>
+		
 		<?php echo $form->label($model,'rememberMe'); ?>
 		<?php echo $form->error($model,'rememberMe'); ?>
+		<?php echo $form->checkBox($model,'rememberMe'); ?>
 	</div>
 
 	<div class="row buttons">
