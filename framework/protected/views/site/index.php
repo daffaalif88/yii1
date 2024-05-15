@@ -9,8 +9,7 @@ $this->pageTitle = Yii::app()->name;
 	<!-- <i><?php echo CHtml::encode(Yii::app()->name); ?></i> -->
 </h1>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat sed explicabo corporis tempore! Inventore, eaque.
-	Repudiandae, ab? Cumque quibusdam ex molestiae sunt est! Odio optio facilis accusamus delectus laboriosam tempore.
+<p> website
 </p>
 <p>lorem:</p>
 <div class="container">
