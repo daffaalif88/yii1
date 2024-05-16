@@ -12,7 +12,7 @@ $this->menu=array(
 );
 ?>
 
-<h1>Jadwal Diklats</h1>
+<h1>Informasi Jadwal Diklat</h1>
 
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,

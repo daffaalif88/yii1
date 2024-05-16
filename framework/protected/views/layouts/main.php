@@ -34,12 +34,32 @@
 		$(document).ready(function () {
 			$('.dropdown-toggle').dropdown(); // Inisialisasi dropdown
 		});
+
+
+		$(document).ready(function () {
+			// Smooth scrolling for all links
+			$("a").on('click', function (event) {
+				if (this.hash !== "") {
+					event.preventDefault();
+					var hash = this.hash;
+					$('html, body').animate({
+						scrollTop: $(hash).offset().top
+					}, 800, function () {
+						window.location.hash = hash;
+					});
+				}
+			});
+		});
 	</script>
 
 	<style>
 		/* p,h1,h2,h3,h4,h5,h6 {
 			color: antiquewhite;
 		} */
+
+		html {
+			scroll-behavior: smooth;
+		}
 	</style>
 
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
@@ -47,7 +67,7 @@
 
 <body style="background-color: darkgrey;" class="container">
 
-	<div class="container" id="page" style="background-color:ghostwhite">
+	<div id="page" style="background-color:ghostwhite">
 		<?php $this->renderPartial('//layouts/navbar'); ?>
 
 

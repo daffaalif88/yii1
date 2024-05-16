@@ -29,7 +29,7 @@ $('.search-form form').submit(function(){
 <h1>Manage Peserta</h1>
 
 
-<?php echo CHtml::link('Advanced Search','#',array('class'=>'search-button btn btn-primary')); ?>
+<?php echo CHtml::link('Advanced Search','#',array('class'=>'search-button btn btn-outline-dark')); ?>
 <div class="search-form" style="display:none">
 	<?php $this->renderPartial('_search',array(
 	'model'=>$model,

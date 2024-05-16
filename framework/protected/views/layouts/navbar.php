@@ -1,6 +1,7 @@
 <nav class="navbar navbar-expand-lg sticky-top" style="background-color: #e3f2fd;">
     <div class="container-fluid">
-        <a class="navbar-brand" href="'/site/index'">Daffaalif WengDev</a>
+        <img src="<?php echo Yii::app()->request->baseUrl; ?>/assets/images/internet.png" class="img-fluid" alt="Your Image" style="width: 25px; height: auto;" >
+        <a class="navbar-brand" href="'/site/index'">.Daffaalif WeBDeV</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -27,7 +28,7 @@
                     </a>
                     <ul class="dropdown-menu">
                         <!-- <li><a class="dropdown-item" href="#">Peserta</a></li> -->
-                        <?php echo CHtml::link('Peserta', array('/peserta/index'), array('class' => 'nav-link active '));?>
+                        <?php echo CHtml::link('Peserta', array('/peserta/admin'), array('class' => 'nav-link active '));?>
                         <!-- <li><a class="dropdown-item" href="#">Jadwal Diklat</a></li> -->
                         <?php echo CHtml::link('Jadwal Diklat', array('/jadwalDiklat/admin'), array('class' => 'nav-link active '));?>
                     </ul>
@@ -41,7 +42,7 @@
                         <!-- <li><a class="dropdown-item" href="#">Peserta</a></li>
                         <li><a class="dropdown-item" href="#">Jadwal Diklat</a></li> -->
                         <?php echo CHtml::link('Kehadiran', array('/kehadiran/admin'), array('class' => 'nav-link active '));?>
-                        <?php echo CHtml::link('Laporan Diklat', array('/laporanDiklat/index'), array('class' => 'nav-link active '));?>
+                        <?php echo CHtml::link('Laporan Diklat', array('/laporanDiklat/admin'), array('class' => 'nav-link active '));?>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
