@@ -3,13 +3,13 @@
 /* @var $model Peserta */
 
 $this->breadcrumbs=array(
-	'Pesertas'=>array('index'),
-	'Create',
+	'Peserta'=>array('index'),
+	'Tambah Peserta',
 );
 
 $this->menu=array(
 	array('label'=>'List Peserta', 'url'=>array('index')),
-	array('label'=>'Manage Peserta', 'url'=>array('admin')),
+	array('label'=>'Kelola Peserta', 'url'=>array('admin')),
 );
 ?>
 

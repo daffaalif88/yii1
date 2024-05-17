@@ -3,12 +3,12 @@
 /* @var $dataProvider CActiveDataProvider */
 
 $this->breadcrumbs=array(
-	'Laporan Diklats',
+	'Laporan Diklat',
 );
 
 $this->menu=array(
-	array('label'=>'Create LaporanDiklat', 'url'=>array('create')),
-	array('label'=>'Manage LaporanDiklat', 'url'=>array('admin')),
+	array('label'=>'Tambah Laporan Diklat', 'url'=>array('create')),
+	array('label'=>'Kelola Laporan Diklat', 'url'=>array('admin')),
 );
 ?>
 

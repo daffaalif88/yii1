@@ -3,13 +3,13 @@
 /* @var $model Peserta */
 
 $this->breadcrumbs=array(
-	'Pesertas'=>array('index'),
-	'Manage',
+	'Peserta'=>array('index'),
+	'Kelola Peserta',
 );
 
 $this->menu=array(
 	array('label'=>'List Peserta', 'url'=>array('index')),
-	array('label'=>'Create Peserta', 'url'=>array('create')),
+	array('label'=>'Tambah Peserta', 'url'=>array('create')),
 );
 
 Yii::app()->clientScript->registerScript('search', "
@@ -26,10 +26,10 @@ $('.search-form form').submit(function(){
 ");
 ?>
 
-<h1>Manage Peserta</h1>
+<h1>Kelola Peserta</h1>
 
 
-<?php echo CHtml::link('Advanced Search','#',array('class'=>'search-button btn btn-outline-dark')); ?>
+<?php echo CHtml::link('Pencarian Lanjutan','#',array('class'=>'search-button btn btn-outline-dark')); ?>
 <div class="search-form" style="display:none">
 	<?php $this->renderPartial('_search',array(
 	'model'=>$model,
@@ -39,6 +39,7 @@ $('.search-form form').submit(function(){
 	'id'=>'peserta-grid',
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,
+	'itemsCssClass' => 'table table-striped table-bordered', 
 	'columns'=>array(
 		'id',
 		'nama',

@@ -3,13 +3,13 @@
 /* @var $model LaporanDiklat */
 
 $this->breadcrumbs=array(
-	'Laporan Diklats'=>array('index'),
-	'Manage',
+	'Laporan Diklat'=>array('index'),
+	'Kelola Laporan Diklat',
 );
 
 $this->menu=array(
-	array('label'=>'List LaporanDiklat', 'url'=>array('index')),
-	array('label'=>'Create LaporanDiklat', 'url'=>array('create')),
+	array('label'=>'List Laporan Diklat', 'url'=>array('index')),
+	array('label'=>'Tambah Laporan Diklat', 'url'=>array('create')),
 );
 
 Yii::app()->clientScript->registerScript('search', "
@@ -26,7 +26,7 @@ $('.search-form form').submit(function(){
 ");
 ?>
 
-<h1>Manage Laporan Diklat</h1>
+<h1>Kelola Laporan Diklat</h1>
 
 
 <?php echo CHtml::link('Advanced Search','#',array('class'=>'search-button btn btn-outline-dark')); ?>
@@ -40,6 +40,7 @@ $('.search-form form').submit(function(){
 	'id'=>'laporan-diklat-grid',
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,
+	'itemsCssClass' => 'table table-striped table-bordered', 
 	'columns'=>array(
 		'id',
 		'id_diklat',

@@ -3,16 +3,16 @@
 /* @var $model Kehadiran */
 
 $this->breadcrumbs=array(
-	'Kehadirans'=>array('index'),
+	'Kehadiran'=>array('index'),
 	$model->id=>array('view','id'=>$model->id),
-	'Update',
+	'Update Kehadiran',
 );
 
 $this->menu=array(
 	array('label'=>'List Kehadiran', 'url'=>array('index')),
-	array('label'=>'Create Kehadiran', 'url'=>array('create')),
-	array('label'=>'View Kehadiran', 'url'=>array('view', 'id'=>$model->id)),
-	array('label'=>'Manage Kehadiran', 'url'=>array('admin')),
+	array('label'=>'Tambah Kehadiran', 'url'=>array('create')),
+	array('label'=>'Lihat Kehadiran', 'url'=>array('view', 'id'=>$model->id)),
+	array('label'=>'Kelola Kehadiran', 'url'=>array('admin')),
 );
 ?>
 

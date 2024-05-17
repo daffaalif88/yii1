@@ -3,16 +3,16 @@
 /* @var $model JadwalDiklat */
 
 $this->breadcrumbs=array(
-	'Jadwal Diklats'=>array('index'),
+	'Jadwal Diklat'=>array('index'),
 	$model->id=>array('view','id'=>$model->id),
-	'Update',
+	'Update Jadwal Diklat',
 );
 
 $this->menu=array(
-	array('label'=>'List JadwalDiklat', 'url'=>array('index')),
-	array('label'=>'Create JadwalDiklat', 'url'=>array('create')),
-	array('label'=>'View JadwalDiklat', 'url'=>array('view', 'id'=>$model->id)),
-	array('label'=>'Manage JadwalDiklat', 'url'=>array('admin')),
+	array('label'=>'List Jadwal Diklat', 'url'=>array('index')),
+	array('label'=>'Tambah Jadwal Diklat', 'url'=>array('create')),
+	array('label'=>'Lihat Jadwal Diklat', 'url'=>array('view', 'id'=>$model->id)),
+	array('label'=>'Kelola Jadwal Diklat', 'url'=>array('admin')),
 );
 ?>
 

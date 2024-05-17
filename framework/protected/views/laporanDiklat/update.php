@@ -3,16 +3,16 @@
 /* @var $model LaporanDiklat */
 
 $this->breadcrumbs=array(
-	'Laporan Diklats'=>array('index'),
+	'Laporan Diklat'=>array('index'),
 	$model->id=>array('view','id'=>$model->id),
-	'Update',
+	'Update Laporan Diklat',
 );
 
 $this->menu=array(
-	array('label'=>'List LaporanDiklat', 'url'=>array('index')),
-	array('label'=>'Create LaporanDiklat', 'url'=>array('create')),
-	array('label'=>'View LaporanDiklat', 'url'=>array('view', 'id'=>$model->id)),
-	array('label'=>'Manage LaporanDiklat', 'url'=>array('admin')),
+	array('label'=>'List Laporan Diklat', 'url'=>array('index')),
+	array('label'=>'Tambah Laporan Diklat', 'url'=>array('create')),
+	array('label'=>'Lihat Laporan Diklat', 'url'=>array('view', 'id'=>$model->id)),
+	array('label'=>'Kelola Laporan Diklat', 'url'=>array('admin')),
 );
 ?>
 

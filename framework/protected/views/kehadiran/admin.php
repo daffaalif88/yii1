@@ -3,13 +3,13 @@
 /* @var $model Kehadiran */
 
 $this->breadcrumbs=array(
-	'Kehadirans'=>array('index'),
-	'Manage',
+	'Kehadiran'=>array('index'),
+	'Kelola Kehadiran',
 );
 
 $this->menu=array(
 	array('label'=>'List Kehadiran', 'url'=>array('index')),
-	array('label'=>'Create Kehadiran', 'url'=>array('create')),
+	array('label'=>'Tambah Kehadiran', 'url'=>array('create')),
 );
 
 Yii::app()->clientScript->registerScript('search', "
@@ -26,7 +26,7 @@ $('.search-form form').submit(function(){
 ");
 ?>
 
-<h1>Manage Kehadiran</h1>
+<h1>Kelola Kehadiran</h1>
 
 <?php echo CHtml::link('Advanced Search','#',array('class'=>'search-button btn btn-outline-dark')); ?>
 <div class="search-form" style="display:none">
@@ -39,6 +39,7 @@ $('.search-form form').submit(function(){
 	'id'=>'kehadiran-grid',
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,
+	'itemsCssClass' => 'table table-striped table-bordered', 
 	'columns'=>array(
 		'id',
 		'id_peserta',

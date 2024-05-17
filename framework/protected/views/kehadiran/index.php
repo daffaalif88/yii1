@@ -3,12 +3,12 @@
 /* @var $dataProvider CActiveDataProvider */
 
 $this->breadcrumbs=array(
-	'Kehadirans',
+	'Kehadiran',
 );
 
 $this->menu=array(
-	array('label'=>'Create Kehadiran', 'url'=>array('create')),
-	array('label'=>'Manage Kehadiran', 'url'=>array('admin')),
+	array('label'=>'Tambah Kehadiran', 'url'=>array('create')),
+	array('label'=>'Kelola Kehadiran', 'url'=>array('admin')),
 );
 ?>
 

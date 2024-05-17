@@ -3,16 +3,16 @@
 /* @var $model LaporanDiklat */
 
 $this->breadcrumbs=array(
-	'Laporan Diklats'=>array('index'),
-	'Create',
+	'Laporan Diklat'=>array('index'),
+	'Tambah Laporan Diklat',
 );
 
 $this->menu=array(
-	array('label'=>'List LaporanDiklat', 'url'=>array('index')),
-	array('label'=>'Manage LaporanDiklat', 'url'=>array('admin')),
+	array('label'=>'List Laporan Diklat', 'url'=>array('index')),
+	array('label'=>'Kelola Laporan Diklat', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Create LaporanDiklat</h1>
+<h1>Tambah LaporanDiklat</h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

@@ -3,12 +3,12 @@
 /* @var $dataProvider CActiveDataProvider */
 
 $this->breadcrumbs=array(
-	'Pesertas',
+	'Peserta',
 );
 
 $this->menu=array(
-	array('label'=>'Create Peserta', 'url'=>array('create')),
-	array('label'=>'Manage Peserta', 'url'=>array('admin')),
+	array('label'=>'Tambah Peserta', 'url'=>array('create')),
+	array('label'=>'Kelola Peserta', 'url'=>array('admin')),
 );
 ?>
 

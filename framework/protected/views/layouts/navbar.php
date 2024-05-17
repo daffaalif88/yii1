@@ -1,7 +1,7 @@
-<nav class="navbar navbar-expand-lg sticky-top" style="background-color: #e3f2fd;">
+<nav class="navbar navbar-expand-lg sticky-top" style="background-color: #ACE1AF;">
     <div class="container-fluid">
         <img src="<?php echo Yii::app()->request->baseUrl; ?>/assets/images/internet.png" class="img-fluid" alt="Your Image" style="width: 25px; height: auto;" >
-        <a class="navbar-brand" href="'/site/index'">.Daffaalif WeBDeV</a>
+        <a class="navbar-brand" href="'/site/index'">.D DiklaT</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -12,14 +12,12 @@
                     <!-- <a class="nav-link active" aria-current="page" href="'/site/index'">Home</a> -->
                     <?php echo CHtml::link('Home', array('/site/index'), array('class' => 'nav-link active '));?>
                 </li>
-                <li class="nav-item">
-                    <!-- <a class="nav-link active" aria-current="page" href="'/site/index'">Home</a> -->
+                <!-- <li class="nav-item">
                     <?php echo CHtml::link('About', array('/site/page', 'view' => 'about'), array('class' => 'nav-link active')); ?>
                 </li>
                 <li class="nav-item">
-                    <!-- <a class="nav-link active" aria-current="page" href="'/site/about'">About</a> -->
                     <?php echo CHtml::link('Contact', array('/site/contact'), array('class' => 'nav-link active '));?>
-                </li>
+                </li> -->
 
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -56,6 +54,10 @@
                         <?php echo CHtml::link('Informasi Jadwal Diklat', array('/jadwalDiklat/index'), array('class' => 'nav-link active '));?>
                         <?php echo CHtml::link('Informasi Kehadiran', array('/kehadiran/index'), array('class' => 'nav-link active '));?>
                     </ul>
+                </li>
+                <li class="nav-item">
+                    <!-- <a class="nav-link active" aria-current="page" href="'/site/index'">Home</a> -->
+                    <?php echo CHtml::link('Laporan', array('/site/laporan'), array('class' => 'nav-link active '));?>
                 </li>
             </ul>
             <form class="d-flex" role="search">

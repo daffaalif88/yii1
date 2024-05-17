@@ -3,7 +3,7 @@
 /* @var $model LaporanDiklat */
 
 $this->breadcrumbs=array(
-	'Laporan Diklats'=>array('index'),
+	'Laporan Diklat'=>array('index'),
 	$model->id,
 );
 

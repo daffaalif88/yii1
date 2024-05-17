@@ -3,12 +3,12 @@
 /* @var $dataProvider CActiveDataProvider */
 
 $this->breadcrumbs=array(
-	'Jadwal Diklats',
+	'Jadwal Diklat',
 );
 
 $this->menu=array(
-	array('label'=>'Create JadwalDiklat', 'url'=>array('create')),
-	array('label'=>'Manage JadwalDiklat', 'url'=>array('admin')),
+	array('label'=>'Tambah JadwalDiklat', 'url'=>array('create')),
+	array('label'=>'Kelola JadwalDiklat', 'url'=>array('admin')),
 );
 ?>
 

@@ -3,16 +3,16 @@
 /* @var $model Peserta */
 
 $this->breadcrumbs=array(
-	'Pesertas'=>array('index'),
+	'Peserta'=>array('index'),
 	$model->id=>array('view','id'=>$model->id),
-	'Update',
+	'Update Peserta',
 );
 
 $this->menu=array(
 	array('label'=>'List Peserta', 'url'=>array('index')),
-	array('label'=>'Create Peserta', 'url'=>array('create')),
-	array('label'=>'View Peserta', 'url'=>array('view', 'id'=>$model->id)),
-	array('label'=>'Manage Peserta', 'url'=>array('admin')),
+	array('label'=>'Tambah Peserta', 'url'=>array('create')),
+	array('label'=>'Lihat Peserta', 'url'=>array('view', 'id'=>$model->id)),
+	array('label'=>'Kelola Peserta', 'url'=>array('admin')),
 );
 ?>
 

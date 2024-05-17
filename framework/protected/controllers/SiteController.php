@@ -2,9 +2,38 @@
 
 class SiteController extends Controller
 {
+	// public function filters()
+    // {
+    //     return array(
+    //         'accessControl', // Mengaktifkan kontrol akses
+    //     );
+    // }
+
+	// public function accessRules()
+    // {
+    //     return array(
+    //         // Mengizinkan admin mengakses semua aksi
+    //         array('allow', 
+    //             'actions' => array('index', 'create', 'update', 'view', 'delete', 'admin','login','logout'),
+    //             'users' => array('admin'), // Peran admin
+    //         ),
+    //         // Mengizinkan user hanya mengakses aksi index
+    //         array('allow', 
+    //             'actions' => array('index','logout','login'),
+    //             'users' => array('user'), // Peran user
+    //         ),
+    //         // Menolak semua pengguna lainnya
+    //         // array('deny',  
+    //         //     'users' => array('user'),
+    //         // ),
+    //     );
+    // }
+
 	/**
 	 * Declares class-based actions.
 	 */
+
+
 	public function actions()
 	{
 		return array(
@@ -38,6 +67,75 @@ class SiteController extends Controller
 		// $this->render('index');
 	}
 
+	public function actionLaporan()
+    {
+        // Ambil data pendaftaran peserta untuk 3 bulan terakhir
+        $data = $this->getPendaftaranData();
+		$data2 = $this->getDiklatData();
+
+        // Render view dengan data
+        $this->render('laporan', [
+            'data' => $data,
+			'data2' => $data2,
+        ]);
+    }
+
+
+	private function getPendaftaranData()
+    {
+        $currentMonth = date('Y-m-01');
+        $data = [];
+        for ($i = 11; $i >= 0; $i--) {
+            $month = (new DateTime($currentMonth))->modify("-{$i} months");
+            $startOfMonth = $month->format('Y-m-01');
+            $endOfMonth = $month->format('Y-m-t');
+
+            $count = Yii::app()->db->createCommand()
+                ->select('COUNT(*)')
+                ->from('peserta')
+                ->where('tanggal_pendaftaran BETWEEN :start AND :end', [
+                    ':start' => $startOfMonth,
+                    ':end' => $endOfMonth,
+                ])
+                ->queryScalar();
+
+            $data[] = [
+                'month' => Yii::app()->dateFormatter->format('MMM yyyy', $startOfMonth),
+                'count' => $count,
+            ];
+        }
+
+        return $data;
+    }
+
+
+	private function getDiklatData()
+    {
+        $currentMonth = date('Y-m-01');
+        $data = [];
+        for ($i = 11; $i >= 0; $i--) {
+            $month = (new DateTime($currentMonth))->modify("-{$i} months");
+            $startOfMonth = $month->format('Y-m-01');
+            $endOfMonth = $month->format('Y-m-t');
+
+            $count = Yii::app()->db->createCommand()
+                ->select('COUNT(*)')
+                ->from('kehadiran')
+                ->where('tanggal BETWEEN :start AND :end AND status = :status', [
+                    ':start' => $startOfMonth,
+                    ':end' => $endOfMonth,
+                    ':status' => 'Masuk',
+                ])
+                ->queryScalar();
+
+            $data[] = [
+                'month' => Yii::app()->dateFormatter->format('MMM yyyy', $startOfMonth),
+                'count' => $count,
+            ];
+        }
+
+        return $data;
+    }
 	/**
 	 * This is the action to handle external exceptions.
 	 */
@@ -52,6 +150,7 @@ class SiteController extends Controller
 		}
 	}
 
+	
 	/**
 	 * Displays the contact page
 	 */

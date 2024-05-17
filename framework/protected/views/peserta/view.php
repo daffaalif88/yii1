@@ -3,16 +3,16 @@
 /* @var $model Peserta */
 
 $this->breadcrumbs=array(
-	'Pesertas'=>array('index'),
+	'Peserta'=>array('index'),
 	$model->id,
 );
 
 $this->menu=array(
 	array('label'=>'List Peserta', 'url'=>array('index')),
-	array('label'=>'Create Peserta', 'url'=>array('create')),
+	array('label'=>'Tambah Peserta', 'url'=>array('create')),
 	array('label'=>'Update Peserta', 'url'=>array('update', 'id'=>$model->id)),
-	array('label'=>'Delete Peserta', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage Peserta', 'url'=>array('admin')),
+	array('label'=>'Hapus Peserta', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Are you sure you want to delete this item?')),
+	array('label'=>'Kelola Peserta', 'url'=>array('admin')),
 );
 ?>
 

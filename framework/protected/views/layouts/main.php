@@ -52,6 +52,9 @@
 		});
 	</script>
 
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
 	<style>
 		/* p,h1,h2,h3,h4,h5,h6 {
 			color: antiquewhite;

@@ -3,13 +3,13 @@
 /* @var $model JadwalDiklat */
 
 $this->breadcrumbs=array(
-	'Jadwal Diklats'=>array('index'),
-	'Manage',
+	'Jadwal Diklat'=>array('index'),
+	'Keloa Jadwal Diklat',
 );
 
 $this->menu=array(
-	array('label'=>'List JadwalDiklat', 'url'=>array('index')),
-	array('label'=>'Create JadwalDiklat', 'url'=>array('create')),
+	array('label'=>'List Jadwal Diklat', 'url'=>array('index')),
+	array('label'=>'Tambah Jadwal Diklat', 'url'=>array('create')),
 );
 
 Yii::app()->clientScript->registerScript('search', "
@@ -26,7 +26,7 @@ $('.search-form form').submit(function(){
 ");
 ?>
 
-<h1>Manage Jadwal Diklat</h1>
+<h1>Kelola Jadwal Diklat</h1>
 
 
 <?php echo CHtml::link('Advanced Search','#',array('class'=>'search-button btn btn-outline-dark')); ?>
@@ -35,11 +35,18 @@ $('.search-form form').submit(function(){
 	'model'=>$model,
 )); ?>
 </div><!-- search-form -->
+<div class="container">
 
+
+</div>
+
+<!-- <div class="table-responsive"> -->
 <?php $this->widget('zii.widgets.grid.CGridView', array(
-	'id'=>'jadwal-diklat-grid',
-	'dataProvider'=>$model->search(),
-	'filter'=>$model,
+    'id' => 'jadwal-diklat-grid',
+    'dataProvider' => $model->search(),
+    'filter' => $model,
+    // 'cssFile' => false, // Nonaktifkan CSS default
+    'itemsCssClass' => 'table table-striped table-bordered', // Tambahkan kelas Bootstrap
 	'columns'=>array(
 		'id',
 		'nama_diklat',
@@ -58,3 +65,4 @@ $('.search-form form').submit(function(){
 		),
 	),
 )); ?>
+<!-- </div> -->
